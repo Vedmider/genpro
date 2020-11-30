@@ -10,6 +10,7 @@ create table GENPRO_DOC (
     --
     NAME varchar(255),
     JSON_BODY text,
+    doc_j jsonb,
     --
     primary key (ID)
 );

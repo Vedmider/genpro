@@ -47,9 +47,11 @@ configure([globalModule, coreModule, webModule]) {
         testCompile('org.junit.jupiter:junit-jupiter-api:5.5.2')
         testCompile('org.junit.jupiter:junit-jupiter-engine:5.5.2')
         testCompile('org.junit.vintage:junit-vintage-engine:5.5.2')
+        compile group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
         compileOnly 'org.projectlombok:lombok:1.18.12'
         annotationProcessor 'org.projectlombok:lombok:1.18.12'
         compileOnly 'org.postgresql:postgresql:42.2.5'
+        compile group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '2.9.10'
         testCompileOnly 'org.projectlombok:lombok:1.18.12'
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
     }
@@ -74,6 +76,7 @@ configure(globalModule) {
             runtime('javax.xml.bind:jaxb-api:2.3.1')
             runtime('org.glassfish.jaxb:jaxb-runtime:2.3.1')
         }
+
     }
 
     entitiesEnhancing {

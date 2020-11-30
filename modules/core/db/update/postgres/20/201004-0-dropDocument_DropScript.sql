@@ -1,1 +1,0 @@
-drop table if exists GENPRO_DOCUMENT__U41376 cascade ;

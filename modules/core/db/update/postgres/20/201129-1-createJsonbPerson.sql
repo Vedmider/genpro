@@ -1,4 +1,4 @@
-create table GENPRO_DOCUMENT (
+create table JSONB_PERSON (
     ID uuid,
     VERSION integer not null,
     CREATE_TS timestamp,
@@ -8,8 +8,8 @@ create table GENPRO_DOCUMENT (
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
     --
-    NAME varchar(255),
-    BODY_DOC text,
+    NAME varchar(255) not null,
+    ADDRESS jsonb,
     --
     primary key (ID)
 );
